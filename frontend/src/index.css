@@ -1,0 +1,10 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+main {
+    min-height: 100vh;
+	background-color: #FDFAFE;
+}
