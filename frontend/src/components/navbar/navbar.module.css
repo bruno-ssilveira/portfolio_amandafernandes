@@ -1,0 +1,46 @@
+.navbarContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 617px;
+	width: 360px;
+	background-color: rgb(181, 181, 181);/*#F9F1FD;*/
+	border-radius: 32px;
+}
+
+.myId {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	background-color: #F5E6FE;
+	width: 296px;
+	height: 99px;
+	border-radius: 16px;
+	margin: 32px 32px;
+}
+
+.myId img {
+	width: 65px;
+	height: 67px;
+}
+
+.nameJob {
+	display: flex;
+	flex-direction: column;
+}
+
+.nameJob h1 {
+	font-size: 24px;
+	font-family: "Josefin Sans", sans-serif;
+	color: #45264E;
+	font-weight: 600;
+}
+
+.nameJob h2 {
+	font-size: 16px;
+	font-family: "Josefin Sans", sans-serif;
+	color: #C2A9D0;
+	font-weight: 400;
+}

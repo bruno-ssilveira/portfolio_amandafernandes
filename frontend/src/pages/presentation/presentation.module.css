@@ -1,0 +1,145 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 556px;
+    min-height: 100vh;
+    margin: 0 auto;
+    gap: 24px;
+    user-select: none;
+}
+
+.namePhoto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.namePhoto img{
+    width: 232px;
+    height: 234px;
+}
+
+.namePhoto h1{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+    color: #45264E;
+}
+
+.cursorBar {
+    color: #C2A9D0;
+}
+
+.subTitleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.subTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.subTitle h2 {
+    /*width: 482px;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 90px;
+    background: linear-gradient(
+        5deg,
+        #5A4760 0%, 
+        #6C5F70 10%, 
+        #F0B2CD 25%, 
+        #D98DDF 43%, 
+        #E0B5D9 60%, 
+        #F0B2CD 85%, 
+        #E4B4D7 100%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      text-shadow: 
+        1px 1px 2px rgba(0, 0, 0, 0.2), 
+        -1px -1px 2px rgba(0, 0, 0, 0.2),
+        inset 2px 2px 5px rgba(0, 0, 0, 0.3);*/
+    
+    display: flex;
+    width: 482px;
+    height: 5.625rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    font-family: "Instrument Sans";
+    font-size: 5.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 6.1875rem */
+    background: linear-gradient(76deg, #5A4760 2.24%, #6C5F70 2.24%, #F0B2CD 2.24%, #D9B6DF 29.88%, #E0B5D9 50.95%, #F0B2CD 97.7%, #E4B4D7 114.61%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subTitle h3 {
+    /*position: absolute;
+    left: 49.5%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    color: #45264E;
+    rotate: -16deg;*/
+    position: absolute;
+    left: 49.5%;
+    width: 15.16075rem;
+    height: 5.12325rem;
+    transform: rotate(-11.321deg);
+    flex-shrink: 0;
+    color: #45264E;
+    font-family: Verveine;
+    font-size: 5.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 6.4625rem */
+}
+
+.subTitleContainer p {
+    text-align: center;
+    line-height: 140%;
+    font-size: 24px;
+    font-family: "Instrument Sans";
+    color: #5E4D64;
+}
+
+.subTitleContainer span {
+    font-weight: 600;
+}
+
+.homeContainer h4 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px;
+    align-self: center;
+    width: fit-content;
+    padding: 8px 6px 8px 6px;
+    color: #FFFFFF;
+    background: linear-gradient(76deg, #5A4760 -1.13%, #6C5F70 -1.13%, #F0B2CD -1.13%, #D9B6DF 27.34%, #E0B5D9 49.04%, #F0B2CD 97.21%, #E4B4D7 114.62%);
+}
+
+.arrowDown {
+    width: 40px;
+    height: 45px;
+    align-self: center;
+}
+
+@keyframes jump {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+.arrowDown:hover {
+	animation: jump 0.3s ease-in-out infinite;
+}
