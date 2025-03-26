@@ -8,6 +8,12 @@
 	border-radius: 32px;
 }
 
+.myIdNavigation {
+	display: flex;
+	flex-direction: column;
+	gap: 44px;
+}
+
 .myId {
 	display: flex;
 	flex-direction: row;
@@ -43,4 +49,17 @@
 	font-family: "Josefin Sans", sans-serif;
 	color: #C2A9D0;
 	font-weight: 400;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	background-color: #C2A9D0;
+	width: 296px;
+	gap: 24px;
+}
+
+.navigation p {
+	padding-left: 24px;
 }

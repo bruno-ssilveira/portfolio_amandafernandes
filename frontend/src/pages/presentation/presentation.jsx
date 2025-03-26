@@ -29,7 +29,7 @@ export default function Presentation() {
 		
 		// Timer para transição para a próxima página
 		const timeoutId = setTimeout(() => {
-			navigate('/main')
+			navigate('/home')
 		}, 155000)
 
 		// Cleanup
