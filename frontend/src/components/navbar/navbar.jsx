@@ -1,7 +1,7 @@
+import { NavLink } from 'react-router-dom'
 import styles from './navbar.module.css'
 
-export default function Navbar() {
-
+export default function Navbar({ setPage, page }) {
 	return(
 		<>
 			<nav className={styles.navbarContainer}>
@@ -14,11 +14,11 @@ export default function Navbar() {
 						</div>
 					</div>
 					<div className={styles.navigation}>
-						<p>Home</p>
-						<p>Projetos</p>
-						<p>Sobre mim</p>
-						<p>Experiência</p>
-						<p>Fale comigo</p>
+						<NavLink onClick={ () => setPage('home') } className={page === 'home' ? styles.active : ''}>Home</NavLink>
+						<NavLink onClick={ () => setPage('projetos') } className={page === 'projetos' ? styles.active : ''}>Projetos</NavLink>
+						<NavLink onClick={ () => setPage('sobremim') } className={page === 'sobremim' ? styles.active : ''}>Sobre mim</NavLink>
+						<NavLink onClick={ () => setPage('experiencia') } className={page === 'experiencia' ? styles.active : ''}>Experiência</NavLink>
+						<NavLink onClick={ () => setPage('falecomigo') } className={page === 'falecomigo' ? styles.active : ''}>Fale comigo</NavLink>
 					</div>
 				</section>
 			</nav>

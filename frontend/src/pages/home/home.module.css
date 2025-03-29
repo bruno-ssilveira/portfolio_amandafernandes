@@ -1,11 +1,59 @@
 .homeContainer {
-    display: flex;
-    flex-direction: row;
-    max-width: 1280px;
-    min-height: 100vh;
-    margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	background-color: #FBF4FF;
+	min-height: 100vh;
+	width: 100%;
+	border-radius: 24px;
 }
 
-.navBar {
-    margin-top: 44px;
+.mainContent {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	margin: 40px 40px 0 40px;
+}
+
+.whoAmI {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	font-family: 'Instrument Sans';
+}
+
+.whoAmI h1 {
+	font-size: 32px;
+	font-weight: bold;
+	background: linear-gradient(200deg, #5A4760 2.24%, #6C5F70 2.24%, #F0B2CD 2.24%, #D9B6DF 29.88%, #E0B5D9 50.95%, #F0B2CD 97.7%, #E4B4D7 114.61%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.whoAmI h2 {
+	font-size: 48px;
+	font-weight: bold;
+	background: linear-gradient(200deg, #5A4760 2.24%, #6C5F70 2.24%, #F0B2CD 2.24%, #D9B6DF 29.88%, #E0B5D9 50.95%, #F0B2CD 97.7%, #E4B4D7 114.61%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mainContent h3 {
+	font-family: 'Instrument Sans';
+	font-size: 22px;
+	line-height: 160%;
+	font-weight: 400;
+	color: #45264E;
+	max-width: 680px;
+}
+
+h3 span {
+	font-weight: 600;
+}
+
+.network {
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+	font-size: 26px;
+	color: #45264E;
 }
