@@ -1,6 +1,6 @@
 import styles from './home.module.css'
 import { motion } from 'framer-motion'
-import { AiFillBehanceCircle, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { AiFillBehanceCircle, AiFillLinkedin, AiFillGithub, AiOutlineArrowRight } from "react-icons/ai";
 
 export default function Home() {
 	return (
@@ -30,12 +30,24 @@ export default function Home() {
 				<div className={styles.lastProjectsContainer}>
 					<h1>Últimos projetos publicados:</h1>
 					<div className={styles.lastProjects}>
-						<div className={styles.projectCardIos}>
+						<div className={styles.projectCard}>
 							<h2>Habilita Já</h2>
-							
+							<div className={styles.tags}>
+								<h3>Maio, 2024.</h3>
+								<h4 className={styles.tagIOS}>iOS</h4>
+							</div>
+							<img src="./imgs/habilitaja.svg" alt="" />
 						</div>
-						<div className={styles.projectCardAndroid}>
-
+						<div className={styles.projectCard}>
+							<h2>Fintous</h2>
+							<div className={styles.tags}>
+								<h3>Fevereiro, 2024.</h3>
+								<h4 className={styles.tagAndroid}>Android</h4>
+							</div>
+							<img src="./imgs/fintous.svg" alt="" />
+						</div>
+						<div className={styles.projectSeeAll}>
+							<h5>Ver todos <AiOutlineArrowRight /></h5>
 						</div>
 					</div>
 				</div>
