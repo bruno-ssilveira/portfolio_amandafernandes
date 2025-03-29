@@ -10,8 +10,14 @@
 .mainContent {
 	display: flex;
 	flex-direction: column;
-	gap: 24px;
+	gap: 44px;
 	margin: 40px 40px 0 40px;
+}
+
+.whoAmIContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
 }
 
 .whoAmI {
@@ -56,4 +62,22 @@ h3 span {
 	gap: 24px;
 	font-size: 26px;
 	color: #45264E;
+}
+
+.network a {
+	color: inherit;
+}
+
+.network a:hover {
+	color: #663e72;
+}
+
+.network a:active {
+	transform: scale(.9);
+}
+
+.lastProjectsContainer {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 }
