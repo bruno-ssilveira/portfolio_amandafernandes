@@ -11,7 +11,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 44px;
-	margin: 40px 40px 0 40px;
+	margin: 32px;
 }
 
 .whoAmIContainer {
@@ -83,6 +83,14 @@ h3 span {
 	width: 100%;
 }
 
+.lastProjectsContainer h1 {
+	font-family: 'Instrument Sans';
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 32px;
+	color: #5E4D64;
+}
+
 .lastProjects {
 	display: flex;
 	flex-direction: row;
@@ -91,20 +99,171 @@ h3 span {
 
 .projectCard {
 	background-color: #F5E6FE;
+	width: 35%;
+	border-radius: 8px;
+	user-select: none;
+}
+
+.cardContent {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
 	padding: 16px;
-	width: 244px;
-	max-height: 252px;
+}
+
+.projectCardTitle {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.projectCardTitle h2 {
+	font-family: 'Instrument Sans';
+	font-size: 24px;
+	font-weight: bold;
+	color: #45264E;
 }
 
 .tags {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
+	gap: 4px;
+}
+
+.tags h3 {
+	border-radius: 8px;
+	background-color: #FFFFFF;
+	padding: 4px 12px 4px 12px;
+	font-size: 14px;
+	font-family: 'Instrument Sans';
+	font-weight: 600;
+	line-height: 160%;
+	color: #45264E;
+}
+
+.tagIOS {
+	border-radius: 8px;
+	background-color: #EDB0CA;
+	padding: 4px 12px 4px 12px;
+	font-size: 14px;
+	font-family: 'Instrument Sans';
+	font-weight: 600;
+	line-height: 160%;
+	color: #45264E;
+}
+
+.tagAndroid {
+	border-radius: 8px;
+	background-color: #C2A9D0;
+	padding: 4px 12px 4px 12px;
+	font-size: 14px;
+	font-family: 'Instrument Sans';
+	font-weight: 600;
+	line-height: 160%;
+	color: #45264E;
+}
+
+.cardContent img {
+	align-self: center;
+	width: 137px;
+	height: 134px;
 }
 
 .projectSeeAll {
-	width: 192px;
-	height: 252px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 28%;
+	height: 257.41px;
+	overflow: hidden;
+	border-radius: 8px;
+	user-select: none;
+}
+
+.projectSeeAll::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	background: url('./imgs/bkgvertodos.svg') center/cover no-repeat;
-  	backdrop-filter: blur(10px); /* Aplica o blur no fundo */
-  	background-color: rgba(255, 255, 255, 0.3);
+	filter: blur(12px); /* Aplica o desfoque na imagem de fundo */
+}
+
+.projectSeeAll h5 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
+	font-family: "Be Vietnam Pro", sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	color: #45264E;
+	text-decoration: underline;
+	text-underline-offset: 2px;
+	position: relative; /* Garante que fique acima do blur */
+}
+
+.myServicesContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+
+.myServicesContainer h1 {
+	font-family: 'Instrument Sans';
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 32px;
+	color: #5E4D64;
+}
+
+.myServices {
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+}
+
+.myServices p {
+	padding: 16px 13px 16px 13px;
+	border-radius: 16px 16px 16px 0px;
+	font-family: 'Instrument Sans';
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 120%;
+	color: #45264E;
+	background-color: #F5E6FE;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contactMeContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.contactMeContainer h1 {
+	font-family: 'Instrument Sans';
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 32px;
+	color: #5E4D64;
+}
+
+.contactMeContainer button {
+	border-radius: 50px;
+	padding: 12px 24px 12px 24px;
+	font-family: 'Be Vietnam Pro', sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 140%;
+	color: #FFFFFF;
+	background-color: #45264E;
+	border: none;
+	outline: none;
 }

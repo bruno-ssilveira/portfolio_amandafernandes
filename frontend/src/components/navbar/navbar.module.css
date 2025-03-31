@@ -6,6 +6,7 @@
 	width: 39%;
 	background-color: #F9F1FD;
 	border-radius: 32px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .myIdNavigation {
