@@ -170,6 +170,10 @@ h3 span {
 	height: 134px;
 }
 
+.cardContent img:hover {
+	width: 300;
+}
+
 .projectSeeAll {
 	position: relative;
 	display: flex;
@@ -266,4 +270,13 @@ h3 span {
 	background-color: #45264E;
 	border: none;
 	outline: none;
+}
+
+.contactMeContainer button:hover {
+	background-color: #663e72;
+	cursor: pointer;
+}
+
+.contactMeContainer button:active {
+	transform: scale(.9);
 }
