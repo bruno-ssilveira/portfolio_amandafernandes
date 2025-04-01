@@ -211,6 +211,13 @@ h3 span {
 	text-decoration: underline;
 	text-underline-offset: 2px;
 	position: relative; /* Garante que fique acima do blur */
+	cursor: pointer;
+}
+
+.projectSeeAll h5:hover {
+	color: #663e72;
+	transform: scale(1.2);
+	transition: all 0.6s ease-in-out;
 }
 
 .myServicesContainer {

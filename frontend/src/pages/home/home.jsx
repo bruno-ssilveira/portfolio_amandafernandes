@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { AiFillBehanceCircle, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { FaArrowRight } from "react-icons/fa6";
 
-export default function Home() {
+export default function Home({setPage}) {
 
 	return (
 		<section className={styles.homeContainer}>
@@ -123,7 +123,7 @@ export default function Home() {
 							animate={{ opacity: 1 }}
 							transition={{ duration: 4, delay: 4.2 }}
 						>
-							<h5>Ver todos <FaArrowRight className={styles.arrowSeeAll}/></h5>
+							<h5 onClick={() => setPage('projetos')}>Ver todos <FaArrowRight className={styles.arrowSeeAll}/></h5>
 						</motion.div>
 					</div>
 				</div>

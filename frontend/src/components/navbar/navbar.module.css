@@ -72,6 +72,12 @@
 	opacity: 0.8;
 }
 
+.navigation a:hover {
+	text-decoration: underline;
+    text-decoration-color: #F0B2CD;
+    text-underline-offset: 6px;
+}
+
 .navigation a.active {
 	font-weight: 600;
 	opacity: 1;
