@@ -29,8 +29,8 @@ export default function Presentation() {
 		
 		// Timer para transição para a próxima página
 		const timeoutId = setTimeout(() => {
-			navigate('/home')
-		}, 155000)
+			navigate('/content')
+		}, 12000)
 
 		// Cleanup
 		return () => {
@@ -85,6 +85,7 @@ export default function Presentation() {
 			>Vem conhecer meu cantinho!</motion.h4>
 			<motion.img
 				className={styles.arrowDown}
+				onClick={() => navigate('/content')}
 				src="/imgs/downarrow.svg"
 				alt="flecha apontando para baixo"
 				initial={{ opacity: 0, scale: 0.8 }}
