@@ -6,6 +6,7 @@ import styles from './presentation.module.css'
 export default function Presentation() {
 	const [showText, setShowText] = useState('')
 	const [cursorState, setCursorState] = useState('|')
+	const [percent, setPercent] = useState(0)
 	const navigate = useNavigate()
 	const fullText = 'Amanda Passos'
 
@@ -22,6 +23,16 @@ export default function Presentation() {
 			}
 		}, 200)
 
+		const loading = setInterval(() => {
+			setPercent((prev) => {
+				if (prev >= 100) {
+					clearInterval(loading)
+					return 100
+				}
+				return prev + 1
+			})
+		}, 100)
+
 		// Efeito de cursor piscando
 		const cursorInterval = setInterval(() => {
 			setCursorState((prev) => (prev === '|' ? '' : '|')); 
@@ -30,7 +41,7 @@ export default function Presentation() {
 		// Timer para transição para a próxima página
 		const timeoutId = setTimeout(() => {
 			navigate('/content')
-		}, 12000)
+		}, 5900) 
 
 		// Cleanup
 		return () => {
@@ -54,7 +65,7 @@ export default function Presentation() {
 						alt="foto de perfil"
 						initial={{ opacity: 0, scale: 0.8, y: 80 }}
 						animate={{ opacity: 1, scale: 1, y: 0 }}
-						transition={{ duration: 2, delay: 4 }}
+						transition={{ duration: 2, delay: 2.5 }}
 					/>
 					<h1>
 						{showText}
@@ -66,22 +77,23 @@ export default function Presentation() {
 						className={styles.subTitle}
 						initial={{ opacity: 0, scale: 0.8 }}
 						animate={{ opacity: 1, scale: 1 }}
-						transition={{ duration: 2, delay: 2 }}
+						transition={{ duration: 2, delay: 2.5 }}
 					>
 						<h2>UX/UI</h2>
 						<h3>Designer</h3>
 					</motion.div>
-					<motion.p
+					{/*<motion.p
 						initial={{ opacity: 0, scale: 0.8 }}
 						animate={{ opacity: 1, scale: 1 }}
-						transition={{ duration: 2, delay: 5 }}
-					>Apaixonada por transformar <span>problemas</span> em <span>soluções digitais</span> acessíveis e intuitivas.</motion.p>
+						transition={{ duration: 2, delay: 3.5 }}
+					>Apaixonada por transformar <span>problemas</span> em <span>soluções digitais</span> acessíveis e intuitivas.</motion.p>*/}
 				</div>
 			</div>
-			<motion.h4
+			<p className={styles.loadingPercent}>{percent}%</p>
+			{/*<motion.h4
 				initial={{ opacity: 0, scale: 0.8 }}
 				animate={{ opacity: 1, scale: 1 }}
-				transition={{ duration: 2, delay: 8 }}
+				transition={{ duration: 2, delay: 4.5 }}
 			>Vem conhecer meu cantinho!</motion.h4>
 			<motion.img
 				className={styles.arrowDown}
@@ -90,8 +102,8 @@ export default function Presentation() {
 				alt="flecha apontando para baixo"
 				initial={{ opacity: 0, scale: 0.8 }}
 				animate={{ opacity: 1, scale: 1 }}
-				transition={{ duration: 2, delay: 8 }}
-			/>
+				transition={{ duration: 2, delay: 4.5 }}
+			/>*/}
 		</motion.section>
 	)
 }

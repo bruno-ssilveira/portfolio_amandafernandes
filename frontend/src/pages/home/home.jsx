@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { AiFillBehanceCircle, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { FaArrowRight } from "react-icons/fa6";
 
-export default function Home({setPage}) {
+export default function Home({ setPage, setProject }) {
 
 	return (
 		<section className={styles.homeContainer}>
@@ -13,14 +13,14 @@ export default function Home({setPage}) {
 						<motion.h1
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1 }}
-							transition={{ duration: 2, delay: 0 }}
+							transition={{ duration: 1, delay: 0 }}
 						>
 							Sou Amanda Passos,
 						</motion.h1>
 						<motion.h2
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1 }}
-							transition={{ duration: 2, delay: 1 }}
+							transition={{ duration: 1, delay: .5 }}
 						>
 							UX/UI Designer
 						</motion.h2>
@@ -28,7 +28,7 @@ export default function Home({setPage}) {
 					<motion.h3
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
-						transition={{ duration: 4, delay: 2 }}
+						transition={{ duration: 1, delay: 1 }}
 					>
 						Apaixonada por criar interfaces intuitivas, acessíveis e 
 						centradas no usuário. Meu objetivo é <span>transformar experiências </span> 
@@ -41,7 +41,7 @@ export default function Home({setPage}) {
 							title='Behance'
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1 }}
-							transition={{ duration: 2, delay: 3 }}
+							transition={{ duration: 2, delay: 1.4 }}
 						> <AiFillBehanceCircle /> </motion.a>
 						<motion.a
 							href="https://www.linkedin.com/in/amanda-pfernandes/"
@@ -49,7 +49,7 @@ export default function Home({setPage}) {
 							title='LinkedIn'
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1 }}
-							transition={{ duration: 2, delay: 3.2 }}
+							transition={{ duration: 2, delay: 1.6 }}
 						> <AiFillLinkedin /> </motion.a>
 						<motion.a
 							href="https://github.com/amandagpf"
@@ -57,7 +57,7 @@ export default function Home({setPage}) {
 							title='GitHub'
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1 }}
-							transition={{ duration: 2, delay: 3.4 }}
+							transition={{ duration: 2, delay: 1.8 }}
 						> <AiFillGithub /> </motion.a>
 					</div>
 				</div>
@@ -66,14 +66,15 @@ export default function Home({setPage}) {
 					<motion.h1
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
-						transition={{ duration: 4, delay: 4 }}
+						transition={{ duration: 1, delay: 2 }}
 					>Últimos projetos publicados:</motion.h1>
 					<div className={styles.lastProjects}>
 						<motion.div 
 							className={styles.projectCard}
+							onClick={() => { setPage('projetos'); setProject('teste'); } }
 							initial={{ opacity: 0, scale: 0.8, x: 400 }}
 							animate={{ opacity: 1, scale: 1, x: 0 }}
-							transition={{ duration: 2, delay: 6 }}
+							transition={{ duration: 2, delay: 2.5 }}
 						>
 							<div className={styles.cardContent}>
 								<div className={styles.projectCardTitle}>
@@ -97,7 +98,7 @@ export default function Home({setPage}) {
 							className={styles.projectCard}
 							initial={{ opacity: 0, scale: 0.8, x: 200 }}
 							animate={{ opacity: 1, scale: 1, x: 0 }}
-							transition={{ duration: 2, delay: 5 }}
+							transition={{ duration: 2, delay: 2 }}
 						>
 							<div className={styles.cardContent}>
 								<div className={styles.projectCardTitle}>
@@ -121,7 +122,7 @@ export default function Home({setPage}) {
 							className={styles.projectSeeAll}
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1 }}
-							transition={{ duration: 4, delay: 4.2 }}
+							transition={{ duration: 4, delay: 1.5 }}
 						>
 							<h5 onClick={() => setPage('projetos')}>Ver todos <FaArrowRight className={styles.arrowSeeAll}/></h5>
 						</motion.div>
@@ -132,23 +133,23 @@ export default function Home({setPage}) {
 					<motion.h1
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
-						transition={{ duration: 2, delay: 7 }}
+						transition={{ duration: 2, delay: 3 }}
 					>Serviços que ofereço:</motion.h1>
 					<div className={styles.myServices}>
 						<motion.p
 							initial={{ opacity: 0, y: 100 }}
 							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 2, delay: 7.5 }}
+							transition={{ duration: 2, delay: 3.5 }}
 						>UX/UI Design</motion.p>
 						<motion.p
 							initial={{ opacity: 0, y: 100 }}
 							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 2, delay: 8 }}
+							transition={{ duration: 2, delay: 3.7 }}
 						>Mentoria para Júniors (gratuita)</motion.p>
 						<motion.p
 							initial={{ opacity: 0, y: 100 }}
 							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 2, delay: 8.5 }}
+							transition={{ duration: 2, delay: 3.9 }}
 						>Design System</motion.p>
 					</div>
 				</div>
@@ -158,7 +159,7 @@ export default function Home({setPage}) {
 						className={styles.contactMeTitle}
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
-						transition={{ duration: 2, delay: 9 }}
+						transition={{ duration: 2, delay: 4.5 }}
 					>
 						Vamos construir algo incrível em conjunto?
 					</motion.h1>
@@ -166,7 +167,7 @@ export default function Home({setPage}) {
 						className={styles.contactMeButton}
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
-						transition={{ duration: 2, delay: 9.5 }}
+						transition={{ duration: 2, delay: 5 }}
 					>
 						Fale comigo!
 					</motion.button>

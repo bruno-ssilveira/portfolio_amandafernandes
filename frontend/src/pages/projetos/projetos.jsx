@@ -1,68 +1,13 @@
-import styles from './projetos.module.css'
-import { motion } from 'framer-motion'
+import { useState } from 'react'
+import MyProjects from './myprojects/myprojects.jsx'
 
-export default function Projetos() {
+export default function Projetos({ project, setProject }) {
+	
+
 	return(
-		<div className={styles.projetosContainer}>
-			<div className={styles.mainContent}>
-				<motion.h1
-					className={styles.projetosTitle}
-
-				>
-					Meus projetos
-				</motion.h1>
-
-				<div className={styles.projetosCardsContainer}>
-					<div className={styles.projetosCard}>
-						<div className={styles.projetosCardContent}>
-							<div className={styles.projetosCardInfo}>
-								<div className={styles.projetosCardTitle}>
-									<h1>Habilita Já</h1>
-									<h2 className={styles.tagiOS}>iOS</h2>
-								</div>
-								<h3>Junho, 2024.</h3>
-							</div>
-							<img src="./imgs/habilitaja.svg" alt="" />
-						</div>
-					</div>
-					<div className={styles.projetosCard}>
-						<div className={styles.projetosCardContent}>
-							<div className={styles.projetosCardInfo}>
-								<div className={styles.projetosCardTitle}>
-									<h1>Habilita Já</h1>
-									<h2 className={styles.tagiOS}>iOS</h2>
-								</div>
-								<h3>Junho, 2024.</h3>
-							</div>
-							<img src="./imgs/habilitaja.svg" alt="" />
-						</div>
-					</div>
-					<div className={styles.projetosCard}>
-						<div className={styles.projetosCardContent}>
-							<div className={styles.projetosCardInfo}>
-								<div className={styles.projetosCardTitle}>
-									<h1>Habilita Já</h1>
-									<h2 className={styles.tagiOS}>iOS</h2>
-								</div>
-								<h3>Junho, 2024.</h3>
-							</div>
-							<img src="./imgs/habilitaja.svg" alt="" />
-						</div>
-					</div>
-					<div className={styles.projetosCard}>
-						<div className={styles.projetosCardContent}>
-							<div className={styles.projetosCardInfo}>
-								<div className={styles.projetosCardTitle}>
-									<h1>Habilita Já</h1>
-									<h2 className={styles.tagiOS}>iOS</h2>
-								</div>
-								<h3>Junho, 2024.</h3>
-							</div>
-							<img src="./imgs/habilitaja.svg" alt="" />
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<>
+			{project === 'myProjects' && <MyProjects setProject={setProject}/>}
+			{project === 'teste' && <h1>teste</h1>}
+		</>
 	)
 }
