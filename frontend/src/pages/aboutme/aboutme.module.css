@@ -19,3 +19,18 @@
 	flex-direction: column;
 	gap: 16px;
 }
+
+.aboutMe h1 {
+	font-size: 32px;
+	font-family: 'Instrument Sans', sans-serif;
+	font-weight: bold;
+	color: #5E4D64;
+}
+
+.aboutMe h2 {
+	font-size: 24px;
+	font-family: 'Instrument Sans', sans-serif;
+	font-weight: 400;
+	color: #45264E;
+	line-height: 160%;
+}
