@@ -34,3 +34,144 @@
 	color: #45264E;
 	line-height: 160%;
 }
+
+.degreesContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	width: 100%;
+}
+
+.degreesContainer h1 {
+	font-size: 28px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 600;
+	color: #45264E;
+}
+
+.degrees {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 16px;
+	width: 100%;
+	height: 230px;
+}
+
+.degreeCard1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	background-color: #F5E6FE;
+	width: 100%;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	height: 100%;
+	border-radius: 16px 16px 0 16px;
+}
+.degreeCard2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	background-color: #F5E6FE;
+	width: 100%;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	height: 100%;
+	border-radius: 16px 16px 16px 0;
+}
+
+.degreeCard3 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	background-color: #F5E6FE;
+	width: 100%;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	height: 100%;
+	border-radius: 16px 0 16px 16px;
+}
+
+.degreeCard4 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	background-color: #F5E6FE;
+	width: 100%;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	height: 100%;
+	border-radius: 0 16px 16px 16px;
+}
+
+.degreeInfo {
+	font-family: 'Instrument Sans', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 160%;
+	color: #45264E;
+}
+
+.degreeInfo :nth-of-type(2) {
+	font-weight: 600;
+}
+
+.usedToolsContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	width: 100%;
+}
+
+.usedToolsContainer h1 {
+	font-size: 28px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 600;
+	color: #45264E;
+}
+
+.tools {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.myProccessContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	width: 100%;
+}
+
+.myProccessTitle {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.myProccessTitle h1 {
+	font-size: 28px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 600;
+	color: #45264E;
+}
+
+.myProccessTitle p {
+	font-size: 18px;
+	font-family: 'Instrument Sans', sans-serif;
+	font-weight: 400;
+	color: #45264E;
+	line-height: 160%;
+}
+
+.myProccessTitle p span {
+	font-weight: 600;
+}
+
+.myProccessTopicsContainer {
+	
+}
