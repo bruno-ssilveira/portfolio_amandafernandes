@@ -1,0 +1,78 @@
+.experienciaContainer {
+	display: flex;
+	flex-direction: column;
+	background-color: #FBF4FF;
+	min-height: 100vh;
+	width: 100%;
+	border-radius: 24px;
+}
+
+.experienciaContent {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+	margin: 32px;
+}
+  
+.experienciaContainerTeste {
+    background-color: #fef6ff;
+    padding: 40px;
+    border-radius: 20px;
+  }
+  
+  .titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  .timelineContainer {
+    position: relative;
+    padding-left: 100px;
+  }
+  
+  .verticalLine {
+    position: absolute;
+    left: 65px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #d145b9;
+    z-index: 0;
+  }
+  
+  .fotoFlutuante {
+    position: absolute;
+    top: 0;
+    left: 35px;
+    transition: transform 0.2s ease-out;
+    z-index: 1;
+  }
+  
+  .perfilImg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #d145b9;
+    object-fit: cover;
+  }
+  
+  .card {
+    background: transparent;
+    padding: 20px 20px 20px 80px;
+    margin-bottom: 60px;
+    position: relative;
+    border-left: 4px solid transparent;
+  }
+  
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    width: 10px;
+    height: 10px;
+    background-color: #d145b9;
+    border-radius: 50%;
+    z-index: 2;
+  }

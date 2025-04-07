@@ -4,7 +4,7 @@ import styles from './content.module.css'
 import Home from '../home/home.jsx'
 import Projetos from '../projetos/projetos.jsx'
 import AboutMe from '../aboutme/aboutme.jsx'
-
+import Experiencia from '../experiencia/experiencia.jsx'
 
 export default function Content() {
 	const [page, setPage] = useState('home')

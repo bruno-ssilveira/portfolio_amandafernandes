@@ -40,6 +40,7 @@
 	flex-direction: column;
 	gap: 16px;
 	width: 100%;
+	user-select: none;
 }
 
 .degreesContainer h1 {
@@ -111,13 +112,14 @@
 .degreeInfo {
 	font-family: 'Instrument Sans', sans-serif;
 	font-weight: 400;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 160%;
 	color: #45264E;
 }
 
 .degreeInfo :nth-of-type(2) {
 	font-weight: 600;
+	font-size: 16px;
 }
 
 .usedToolsContainer {
@@ -125,6 +127,7 @@
 	flex-direction: column;
 	gap: 16px;
 	width: 100%;
+	user-select: none;
 }
 
 .usedToolsContainer h1 {
@@ -158,6 +161,7 @@
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 600;
 	color: #45264E;
+	user-select: none;
 }
 
 .myProccessTitle p {
@@ -173,5 +177,129 @@
 }
 
 .myProccessTopicsContainer {
-	
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.myProccessTopics {
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+	font-family: 'Instrument Sans', sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	color: #C2A9D0;
+	user-select: none;
+	cursor: pointer;
+}
+
+.myProccessActive {
+	text-decoration: underline;
+	text-decoration-color: #C2A9D0;
+	text-underline-offset: 8px;
+	color: #45264E;
+	vertical-align: top;
+}
+
+.myProccessContentContainer {
+	border-radius: 0px 24px 24px 24px;
+	background-color: #F5E6FE;
+	height: 450px;
+}
+
+.myProccessContent {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	padding: 24px 32px 24px 32px;
+}
+
+.myProccessContentMotion {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.myProccessContent h1 {
+	font-family: 'Instrument Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	color: #45264E;
+}
+
+.myProccessImersao {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.imersaoTopics {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.imersaoTopics h2 {
+	font-family: 'Instrument Sans', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	color: #45264E;
+}
+
+.imersaoTopicsList {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	padding-left: 16px;
+}
+
+.imersaoTopicsList p {
+	font-family: 'Instrument Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #45264E;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 4px;
+}
+
+.imgImersao {
+	width: 500px;
+	user-select: none;
+}
+
+.imgIdeacao {
+	width: 600px;
+	user-select: none;
+}
+
+.prototipationImg {
+	width: 500px;
+	user-select: none;
+}
+
+.myProccessAuprovacao {
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+	user-select: none;
+}
+
+.myProccessAuprovacao img {
+	background-color: #D9D9D9;
+	width: 300px;
+	height: 300px;
+	border-radius: 8px;
+}
+
+.myProccessAuprovacao h1 {
+	font-family: 'Instrument Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	color: #45264E;
+	width: 400px;
 }
